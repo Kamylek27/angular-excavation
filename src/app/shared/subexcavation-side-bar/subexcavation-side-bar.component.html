@@ -1,0 +1,11 @@
+<div class="sidebar-view-subexcavation">
+    <div style="color: black; font-weight: bold">Browse Subexcavations</div>
+    <hr />
+    <span *ngFor="let subexcavation of subexcavations">
+        <span class="subexcavation-text"><a href="/view-subexcavation/{{subexcavation.id}}">{{subexcavation.name}}</a></span>
+        <hr />
+    </span>
+    <div style="text-align: center" *ngIf="displayViewAll">
+        <a style="font-weight: bold" routerLink="/list-subexcavations">View All</a>
+    </div>
+</div>
